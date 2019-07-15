@@ -22,3 +22,4 @@ If we are not facing any issue then we can see our app in a web broswer at:
 http://localhost:5000/
 
 
+If you want to use the Dockerfile and build a docker image then don not forget to change the flask's IP from 127.0.0.1 to 0.0.0.0 (all). To do that, open main.py and change the last line, app.run(debug=True), with app.run(host='0.0.0.0').
